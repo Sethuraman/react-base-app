@@ -23,10 +23,12 @@
     "test:cover:travis": "babel-node node_modules/isparta/bin/isparta cover --root src --report lcovonly _mocha -- --require ./tools/testSetup.js \"src/**/*.spec.js\" && cat ./coverage/lcov.info | node_modules/coveralls/bin/coveralls.js",
     "test:watch": "npm run test -- --watch",
     "open:cover": "npm run test:cover && open coverage/index.html",
-		"precommit": "npm run lint && npm run test",
-		"prepush": "npm run test"
+    "precommit": "npm run lint && npm run test",
+    "prepush": "npm run test"
   },
   "dependencies": {
+    "Q": "0.0.1",
+    "axios": "0.14.0",
     "object-assign": "4.1.0",
     "react": "15.3.1",
     "react-dom": "15.3.1",
