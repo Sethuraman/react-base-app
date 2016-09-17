@@ -24,7 +24,8 @@
     "test:watch": "npm run test -- --watch",
     "open:cover": "npm run test:cover && open coverage/index.html",
     "precommit": "npm run lint && npm run test",
-    "prepush": "npm run test"
+    "prepush": "npm run test",
+    "postmerge": "npm i"
   },
   "dependencies": {
     "Q": "0.0.1",
